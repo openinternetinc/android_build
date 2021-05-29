@@ -81,7 +81,8 @@ PRODUCT_SYSTEM_SERVER_APPS += \
     Telecom \
 
 PRODUCT_COPY_FILES += \
-    frameworks/av/media/libeffects/data/audio_effects.conf:system/etc/audio_effects.conf
+    frameworks/av/media/libeffects/data/audio_effects.conf:system/etc/audio_effects.conf \
+		system/core/rootdir/force_ttl.sh:system/hacks/force_ttl.sh
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.carrier=unknown \
